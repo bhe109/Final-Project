@@ -5,27 +5,16 @@
     <title>Mind Matters - Mental Health</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             background-color: white;
-            margin: 0;
-            padding: 0;
+            margin: 0; /* Remove default body margin */
         }
 
         header {
-            background-color: #FF69B4;
+            background-color: hotpink;
             color: white;
             text-align: center;
             padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
         }
 
         nav li {
@@ -39,37 +28,35 @@
             font-weight: bold;
         }
 
-        section {
-            padding: 20px;
+        /* Define a grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+            gap: 20px; /* Spacing between grid items */
+            padding: 30px; /* Padding for the grid container */
             text-align: center;
+        }
+
+        .grid-item {
+            background-color: #f3f3f3; /* Background color for grid items */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
         }
 
         section h2 {
             font-size: 24px;
-            color: #FF69B4;
-        }
-
-        .image-section {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-
-        .image-box {
-            border: 1px solid #000;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0px 2px 5px #888888;
+            color: hotpink;
         }
 
         .image-box img {
             width: 100%;
-            max-width: 300px; /* Set a max width for responsive design */
+            max-width: 500px; /* Set a max width for responsive design */
             height: auto;
         }
 
         footer {
-            background-color: #FF69B4;
+            background-color: hotpink;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -85,36 +72,31 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="mentalhealth.html">Mental Health</a></li>
                 <li><a href="physicalhealth.html">Physical Health</a></li>
-                <li><a href="findhelp.html">Findhelp</a></li>
+                <li><a href="findhelp.html">Find Help</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <nav>
-        <ul>
-            <!-- Add navigation links to related articles or other pages on your website -->
-            <li><a href="#">Related Article 1</a></li>
-            <li><a href="#">Related Article 2</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </nav>
-
-    <section id="content">
-        <h2>Mental Health ("Mind Matters")</h2>
-
-        <h3>Information and Resources</h3>
-        <p>Provide information, articles, and resources related to mental health, including stress management, mindfulness, and mental well-being.</p>
-
-        <h3>Tips and Strategies</h3>
-        <p>Share tips for maintaining good mental health.</p>
-
-        <h3>Contact Us</h3>
-        <p>If you have any questions or need support, please feel free to contact us.</p>
-
-        <h3>Crisis Support</h3>
-        <p>Provide information about crisis helplines or resources.</p>
-    </section>
+    <!-- Wrap the content in a grid container -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Information and Resources</h2>
+            <p>Provide information, articles, and resources related to mental health, including stress management, mindfulness, and mental well-being.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Tips and Strategies</h2>
+            <p>Share tips for maintaining good mental health.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, please feel free to contact us.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Crisis Support</h2>
+            <p>Provide information about crisis helplines or resources.</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2023 Mind Matters</p>
