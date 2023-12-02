@@ -5,27 +5,16 @@
     <title>Find Help - Resources</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             background-color: white;
-            margin: 0;
-            padding: 0;
+            margin: 0; /* Remove default body margin */
         }
 
         header {
-            background-color: #FF69B4;
+            background-color: hotpink;
             color: white;
             text-align: center;
             padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
         }
 
         nav li {
@@ -39,37 +28,27 @@
             font-weight: bold;
         }
 
-        section {
+        /* Define a flex container for content sections */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap; /* Wrap to the next line if the content doesn't fit */
+            justify-content: space-around; /* Horizontally distribute items with space around */
+            padding: 20px;
+        }
+
+        .section {
+            flex: 1; /* Grow to fill available space evenly */
             padding: 20px;
             text-align: center;
         }
 
         section h2 {
             font-size: 24px;
-            color: #FF69B4;
-        }
-
-        .image-section {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-
-        .image-box {
-            border: 1px solid #000;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0px 2px 5px #888888;
-        }
-
-        .image-box img {
-            width: 100%;
-            max-width: 300px; /* Set a max width for responsive design */
-            height: auto;
+            color: hotpink;
         }
 
         footer {
-            background-color: #FF69B4;
+            background-color: hotpink;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -85,48 +64,51 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="mentalhealth.html">Mental Health</a></li>
                 <li><a href="physicalhealth.html">Physical Health</a></li>
-                <li><a href="findhelp.html">Findhelp</a></li>
+                <li><a href="findhelp.html">Find Help</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="resource-links">
-        <h2>Resource Links</h2>
-        <ul>
-            <a href="#">Mental Health Organizations<br></a>
-            <a href="#">Wellness Blogs</a>
-            <!-- Add more links as needed -->
-        </ul>
-    </section>
+    <!-- Wrap content sections in the flex container -->
+    <div class="flex-container">
+        <section class="section" id="resource-links">
+            <h2>Resource Links</h2>
+            <ul>
+                <a href="#">Mental Health Organizations<br></a>
+                <a href="#">Wellness Blogs</a>
+                <!-- Add more links as needed -->
+            </ul>
+        </section>
 
-    <section id="book-recommendations">
-        <h2>Book Recommendations</h2>
-        <ul>
-            Book Title 1<br>
-            Book Title 2<br>
-            <!-- Add more book recommendations -->
-        </ul>
-    </section>
+        <section class="section" id="book-recommendations">
+            <h2>Book Recommendations</h2>
+            <ul>
+                Book Title 1<br>
+                Book Title 2
+                <!-- Add more book recommendations -->
+            </ul>
+        </section>
 
-    <section id="support-groups">
-        <h2>Support Groups</h2>
-        <ul>
-            Local Support Group 1<br>
-            Online Community 2<br>
-            <!-- Add more support groups -->
-        </ul>
-    </section>
+        <section class="section" id="support-groups">
+            <h2>Support Groups</h2>
+            <ul>
+                Local Support-1<br>
+                Online Community-2
+                <!-- Add more support groups -->
+            </ul>
+        </section>
 
-    <section id="disclaimer">
-        <h2>Disclaimer</h2>
-        <p>The information on this website is not a substitute for professional advice.</p>
-    </section>
+        <section class="section" id="disclaimer">
+            <h2>Disclaimer</h2>
+            <p>The information on this website is not a substitute for professional advice.</p>
+        </section>
 
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>If you have questions or need assistance, please contact us.</p>
-    </section>
+        <section class="section" id="contact-us">
+            <h2>Contact Us</h2>
+            <p>If you have questions or need assistance, please contact us.</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2023 Find Help</p>
