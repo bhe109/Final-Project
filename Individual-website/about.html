@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABout Mind & Body Wellness</title>
+    <title>Mind & Body Wellness</title>
     <style>
-    
         body {
-            font-family:sans-serif;
-            background-color: white;
+            font-family: sans-serif;
+            background-opacity: 1.5;
+            color: black;
+            font-size: 30px;
         }
-        
+
         header {
             background-color: hotpink;
             color: black;
@@ -28,17 +29,17 @@
             color: black;
             font-weight: bold;
         }
-        
+
         section {
             padding: 30px;
             text-align: center;
         }
 
         section h2 {
-            font-size: 24px;
-            color: hotpink;
+            font-size: 40px;
+            color: rgb(190, 87, 138);
         }
-     
+
         .image-section {
             display: flex;
             justify-content: space-around;
@@ -51,7 +52,7 @@
 
         .image-box img {
             width: 100%;
-            max-width: 500px; /* Set a max width for responsive design */
+            max-width: 500px;
             height: auto;
         }
 
@@ -61,12 +62,11 @@
             text-align: center;
             padding: 10px 0;
         }
-        
     </style>
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        <h1>Welcome to Mind & Body Wellness</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -78,17 +78,35 @@
             </ul>
         </nav>
     </header>
+
     <section>
-        <h2>Our Mission</h2>
-        <p>Our mission is to promote mental and physical well-being.</p>
+        <h2><a href="about.html" style="text-decoration: none; color: black;">About Us</a></h2>
+        <p>Learn about our mission and team.</p>
     </section>
+    
     <section>
-        <h2>Meet Our Team</h2>
-        <p>Get to know the dedicated individuals behind our organization.</p>
+        <h2><a href="mentalhealth.html" style="text-decoration: none; color: black;">Mental Health</a></h2>
+        <p>Discover tips for a healthy mind.</p>
+    </section>
+    
+    <section>
+        <h2><a href="physicalhealth.html" style="text-decoration: none; color: black;">Physical Health</a></h2>
+        <p>Find resources for a healthy body.</p>
+    </section>
+    
+    <section class="image-section">
+        <div class="image-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Meditate-928849430_900x.jpg" alt="Image 1">
+        </div>
+        <div class="image-box">
+            <img src="https://yogafxteachertraining.com/wp-content/uploads/2018/03/yoga-spirituality-1536x987.jpg" alt="Image 2">
+        </div>
+        <div class="image-box">
+            <img src="https://www.hindustantimes.com/ht-img/img/2023/06/18/550x309/sleep_asanas_1687087341644_1687087354433.jpg" alt="Image 3">
+        </div>
     </section>
     <footer>
         <p>Contact us at contact@wellness.com</p>
     </footer>
 </body>
 </html>
-
